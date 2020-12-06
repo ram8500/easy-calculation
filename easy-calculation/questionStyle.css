@@ -1,0 +1,36 @@
+
+.question__container {
+  padding: 0;
+  background: #ffffff;
+  overflow: hidden;
+  max-width: 550px;
+  margin: 50px auto;
+  font-size: 80%;
+  border: solid 1px #eeeeee;
+}
+
+.question__container a {
+  color: #58aeed;
+}
+
+/* タイトル部分 */
+.question__container .question__title {
+  background: #58aeed;
+  padding: 10px;
+  text-align: center;
+  font-size: 150%;
+  color: #ffffff;
+}
+
+/* .question__container .question__title span {
+  font-size: 20px;
+}
+
+
+.question__set {
+  margin: 0 30%;
+} */
+
+.question__frame {
+  margin: 10% 25%;
+}

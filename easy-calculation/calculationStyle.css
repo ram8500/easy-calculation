@@ -1,0 +1,33 @@
+
+.calculation__container {
+  padding: 0;
+  background: #ffffff;
+  overflow: hidden;
+  max-width: 550px;
+  margin: 50px auto;
+  font-size: 80%;
+  border: solid 1px #eeeeee;
+}
+
+.calculation__container a {
+  color: #58aeed;
+}
+
+/* タイトル部分 */
+.calculation__container .calculation__title {
+  background: #58aeed;
+  padding: 10px;
+  text-align: center;
+  font-size: 150%;
+  color: #ffffff;
+}
+
+.calculation__container .calculation__title span {
+  font-size: 20px;
+}
+
+
+.calculation__set {
+  margin: 0 30%;
+}
+

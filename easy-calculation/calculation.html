@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Calculation</title>
+  <link rel="stylesheet" href="./calculationStyle.css">
+</head>
+<body>
+    <div class="calculation__container">
+      <!-- タイトル -->
+      <div class="calculation__title">
+        <p>計算問題</p>
+      </div>
+      <div class="calculation__">
+        <div class="calculation__set">
+          <p>どの範囲で問題を出題しますか？</p>
+          <form action="question.php" method="post">
+            <p>
+              問題桁数<br>
+              <input type="checkbox" name="digit" class="initialset" value="1">1桁（0~9まで）
+              <br>
+              <input type="checkbox" name="digit" class="initialset" value="2">2桁（10~99まで）
+            </p>
+            <p>
+              足し算、引き算、もしくは両方を選択してください。<br>
+              <input type="checkbox" name="plus" class="initialset" value="plus">足し算
+              <br>
+              <input type="checkbox" name="minus" class="initialset" value="minus">引き算
+            </p>
+            <p>
+              <input type="submit"value="送信">
+              <input type="button" id ="reset" value="リセット">
+            </p>
+          </form>
+        </div>
+        </div>
+      </div>
+      </div>
+  <script>
+    $("initialset").on('click', function() {
+      $('.initialset').prop('check', false);
+      $(this).prop('checked', true);
+    });
+    $("#reset").on('click', function() {
+      $(this.form).find(":checked").prop('checked', false);
+    });
+  </script>
+</body>
+</html>
